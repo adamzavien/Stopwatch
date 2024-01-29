@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set the character encoding and viewport for better display on different devices -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stopwatch</title>
+
+    <!-- Link to an external stylesheet for styling the HTML elements -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Heading for the stopwatch -->
+    <h1 id="myH1">Stopwatch</h1>
+
+    <!-- Container div that holds the display and control buttons -->
+    <div id="container">
+        <!-- Display area for the stopwatch time -->
+        <div id="display">
+            00:00:00::00
+        </div>
+
+        <!-- Control buttons (Start, Stop, Reset) for the stopwatch -->
+        <div id="controls">
+            <!-- Button to start the stopwatch, with an onclick event calling the "start" function -->
+            <button id="startBtn" onclick="start()">Start</button>
+
+            <!-- Button to stop the stopwatch, with an onclick event calling the "stop" function -->
+            <button id="stopBtn" onclick="stop()">Stop</button>
+
+            <!-- Button to reset the stopwatch, with an onclick event calling the "reset" function -->
+            <button id="resetBtn" onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <!-- Link to an external JavaScript file that contains the logic for the stopwatch -->
+    <script src="index.js"></script>
+</body>
+
+</html>
